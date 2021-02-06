@@ -18,7 +18,7 @@ const ProductDisplay = ({product}) => {
         </View>
         <View style={[styles.card, {marginTop: 30}]}>       
             <View style={styles.row}>
-                <Text numberOfLines={5} adjustsFontSizeToFit  style={styles.info}>{product.info}</Text>
+                <Text numberOfLines={5} adjustsFontSizeToFit style={styles.info}>{product.info}</Text>
             </View>
         </View>
     </View>

@@ -7,7 +7,7 @@ const ProductInfo = ({product}) => {
 
   return (
     <ImageBackground
-      source={require('../../../assets/background/productDetail.png')}
+      source={require('../../../assets/background/productInfo.png')}
       style={styles.background}
     >
       <View style={styles.container}>

@@ -13,7 +13,7 @@ export const PRODUCTS = [
     price: 300,
     img: require('../assets/products/termomix.png'),
     info:
-      'La cocina nunca ha sido tan divertida como lo es con termomix CECOTEC. Haz lo que quieras, cuando quieras, y de una manera fácil y rápida.',
+      'La cocina nunca ha sido tan divertida. Haz lo que quieras, cuando quieras, y de una manera fácil y rápida.',
   },
   {
     name: 'Conga 2',

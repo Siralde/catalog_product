@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {StyleSheet, TouchableOpacity, Image, Dimensions, Animated} from 'react-native';
+import {StyleSheet, TouchableOpacity, Image, Dimensions, Animated } from 'react-native';
 import {useNavigation} from '@react-navigation/native'; //Navigation Handler for Products Details
 import ProductDetails from './productDetails';
 
