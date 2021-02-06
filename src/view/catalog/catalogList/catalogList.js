@@ -15,7 +15,7 @@ const CatalogList = ({products}) => {
             <FlatList
                 data={products}
                 renderItem={renderProducts}
-                keyExtractor={(item) => item.key}
+                keyExtractor={(item) => item.id}
             />
         </View>
     );
