@@ -1,11 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
-import {View, StyleSheet, FlatList} from 'react-native';
-=======
 
 import {View, StyleSheet, FlatList} from 'react-native';
 
->>>>>>> old-state
 import CatalogListItem from './catalogListItem/catalogListItem';
 
 const CatalogList = ({products}) => {

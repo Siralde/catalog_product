@@ -1,11 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
-<<<<<<< HEAD
-const ProductDetails = ({item, WIDTH}) => {
-=======
 const ProductDetails = ({item}) => {
->>>>>>> old-state
   return (
     <View style={styles.container}>
         <View style={[styles.row]}>
