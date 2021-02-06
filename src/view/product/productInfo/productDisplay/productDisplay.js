@@ -7,7 +7,7 @@ const ProductDisplay = ({product}) => {
     <View style={styles.container}>
         <View style={[styles.card, {marginBottom: 10}]}>
             <View style={styles.row}>
-                <Text style={styles.name}>{product.name}</Text>
+                <Text numberOfLines={1} adjustsFontSizeToFit style={styles.name}>{product.name}</Text>
             </View>
             <View style={styles.row}>
                 <Text style={styles.category}>{product.category}</Text>
@@ -15,11 +15,10 @@ const ProductDisplay = ({product}) => {
             <View style={styles.row}>
                 <Text style={styles.price}>{product.price} €</Text>
             </View>
-            
         </View>
         <View style={[styles.card, {marginTop: 30}]}>       
             <View style={styles.row}>
-                <Text style={styles.info}>{product.info}</Text>
+                <Text numberOfLines={5} adjustsFontSizeToFit style={styles.info}>{product.info}</Text>
             </View>
         </View>
     </View>
@@ -31,7 +30,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     card: {
-        flex: 0.4,
+        flex: 0.45,
         paddingHorizontal: 32,
         alignSelf: "center",
         marginTop: 35,
@@ -64,7 +63,8 @@ const styles = StyleSheet.create({
     info:{
         fontFamily: "Avenir",
         color: "#4b3ca7",
-        fontSize: 25,
+        fontSize: 40,
+        paddingBottom: 5
     }
 });
 

@@ -2,7 +2,10 @@ import React from 'react';
 import {View, StyleSheet, Image, Dimensions} from 'react-native';
 
 const ProductHeader = ({product}) => {
+<<<<<<< HEAD
 
+=======
+>>>>>>> old-state
   return (
     <View style={styles.container}>
         <Image style={styles.img} source={product.img}/>

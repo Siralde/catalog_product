@@ -4,9 +4,13 @@ import ProductHeader from './productHeader/productHeader';
 import ProductDisplay from './productDisplay/productDisplay';
 
 const ProductInfo = ({product}) => {
+<<<<<<< HEAD
+=======
+
+>>>>>>> old-state
   return (
     <ImageBackground
-      source={require('../../../assets/background/productDetail.png')}
+      source={require('../../../assets/background/productInfo.png')}
       style={styles.background}
     >
       <View style={styles.container}>
