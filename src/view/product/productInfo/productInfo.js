@@ -1,16 +1,9 @@
 import React from 'react';
 import {View, StyleSheet, ImageBackground} from 'react-native';
-
-import {useNavigation, useTheme} from '@react-navigation/native';
-
 import ProductHeader from './productHeader/productHeader';
 import ProductDisplay from './productDisplay/productDisplay';
 
 const ProductInfo = ({product}) => {
-//   const product = props.route.params.product;
-  const theme = useTheme();
-  const nav = useNavigation();
-
   return (
     <ImageBackground
       source={require('../../../assets/background/productDetail.png')}

@@ -1,17 +1,9 @@
 import React from 'react';
-import { View, StyleSheet, Dimensions, Text } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
 const ProductDetails = ({item, WIDTH}) => {
-  //INLINE STYLES
-
-  const nameStarJoiner = {
-    width: WIDTH / 1.3,
-  };
-
   return (
     <View style={styles.container}>
-
-
         <View style={[styles.row]}>
             
             {/* First Column */}

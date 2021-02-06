@@ -1,10 +1,7 @@
 import React from 'react';
-import {View, StyleSheet, Text, Image, Dimensions} from 'react-native';
-
-import {useTheme} from '@react-navigation/native';
+import {View, StyleSheet, Image, Dimensions} from 'react-native';
 
 const ProductHeader = ({product}) => {
-  const theme = useTheme();
 
   return (
     <View style={styles.container}>
