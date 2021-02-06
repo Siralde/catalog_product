@@ -1,11 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 
-import {useNavigation, useTheme} from '@react-navigation/native';
-
-
 const ProductDisplay = ({product}) => {
-  const theme = useTheme();
 
   return (
     <View style={styles.container}>
@@ -70,8 +66,6 @@ const styles = StyleSheet.create({
         color: "#4b3ca7",
         fontSize: 25,
     }
-
-
 });
 
 export default ProductDisplay;
