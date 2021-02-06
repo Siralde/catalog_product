@@ -15,7 +15,6 @@ const ProductDisplay = ({product}) => {
             <View style={styles.row}>
                 <Text style={styles.price}>{product.price} €</Text>
             </View>
-            
         </View>
         <View style={[styles.card, {marginTop: 30}]}>       
             <View style={styles.row}>
