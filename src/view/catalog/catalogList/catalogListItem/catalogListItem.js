@@ -20,7 +20,7 @@ const CatalogListItem = ({item, theme}) => {
 
   //INLINE STYLES
   const containerInline = {
-    backgroundColor: theme.colors.primary,
+    backgroundColor: '#DCDDFC',
   };
 
   //ANIMTATED STATES
@@ -59,9 +59,9 @@ const styles = StyleSheet.create({
   },
   img: {
     width: Dimensions.get('window').width / 3,
-    height: Dimensions.get('window').height / 6,
+    height: Dimensions.get('window').height / 5,
     alignSelf: 'center',
-  },
+  }
 });
 
 export default CatalogListItem;

@@ -13,12 +13,34 @@ const MainRoutes = () => {
       <MainStack.Screen
         name="catalog"
         component={Catalog}
-        options={{headerShown: true}}
+        options={{
+          title: 'Catalogo',
+          headerStyle: {
+            backgroundColor: '#5553BD',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            fontSize: 20,
+            fontFamily: 'Avenir'
+          },
+        }}
       />
       <MainStack.Screen
         name="product"
         component={Product}
-        options={{headerShown: true}}
+        options={{
+          title: 'Detalles',
+          headerStyle: {
+            backgroundColor: '#5553BD',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            fontSize: 20,
+            fontFamily: 'Avenir'
+          },
+        }}
       />
     </MainStack.Navigator>
   );

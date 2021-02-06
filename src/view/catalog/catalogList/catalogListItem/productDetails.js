@@ -1,80 +1,34 @@
-/**
- * @file infoView
- *
- * @description: Submodule that manage all the text data of a ProductItem. This sheet is required
- * in order to get a cleaner code.
- */
 import React from 'react';
-import {
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  Dimensions,
-  Text,
-} from 'react-native';
+import { View, StyleSheet, Dimensions, Text } from 'react-native';
 
-//ICONS
-// import FontAwesome from 'react-native-vector-icons/FontAwesome';
-
-const ProductDetails = ({item, theme, WIDTH}) => {
+const ProductDetails = ({item, WIDTH}) => {
   //INLINE STYLES
-  const textInline = {
-    color: theme.colors.text
-  };
-
 
   const nameStarJoiner = {
     width: WIDTH / 1.3,
   };
+
   return (
     <View style={styles.container}>
 
 
-      {/* First Row */}
-      <View style={styles.row}>
-        <View style={styles.column}>
-          {/* <View style={[styles.nameStarJoiner, nameStarJoiner]}> */}
-            <Text style={[styles.name, textInline]}>{item.name}</Text>
-            <View style={styles.starView}>
-              {/* <FontAwesome
-                name={'star'}
-                color={'#F5BF45'}
-                size={16}
-                style={styles.icon}
-              /> */}
-              <Text style={[styles.mark, textInline]}>3.5</Text>
+        <View style={[styles.row]}>
+            
+            {/* First Column */}
+            <View style={[styles.column]}>
+                <Text style={styles.name}>{item.name}</Text>
+                <View style={styles.rating}>
+                    <Text style={styles.rating}>3.5</Text>
+                </View>
+                <Text style={styles.category}>{item.category}</Text>
             </View>
-          {/* </View> */}
-          <Text style={[styles.category, textInline]}>{item.category}</Text>
+            {/* Second Column */}
+            <View style={[styles.column]}>
+                <View style={{justifyContent: 'center', alignContent: 'center'}}>
+                    <Text style={[styles.price]}>{item.price + ' €'}</Text>
+                </View>
+            </View>
         </View>
-      </View>
-
-
-
-
-      {/* Second Row */}
-    <View style={styles.row}>
-        <Text style={[styles.price, textInline]}>{item.price + ' €'}</Text>
-        {/* <View style={styles.buttonsRow}> */}
-          {/* <TouchableOpacity
-            style={[styles.button, {backgroundColor: '#46ABC2'}]}>
-             <Ionicons
-              name={'heart-outline'}
-              size={20}
-              style={styles.icon}
-              color={'white'}
-            /> 
-          </TouchableOpacity> */}
-          {/* <TouchableOpacity style={[styles.button]}>
-            <Ionicons
-              name={'add'}
-              size={25}
-              style={styles.icon}
-              color={theme.colors.text}
-            /> 
-          </TouchableOpacity> */}
-        {/* </View>  */}
-      </View>
     </View>
   );
 };
@@ -82,67 +36,46 @@ const ProductDetails = ({item, theme, WIDTH}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 0.6,
-    justifyContent: 'space-around',
+    justifyContent: 'space-around'
   },
   row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginHorizontal: 20,
-    flex: 0.4,
+    marginHorizontal: 18,
+    flex: 0.4
   },
   column: {
-    justifyContent: 'space-around',
-  },
-  nameStarJoiner: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    marginVertical: 2,
+    justifyContent: 'space-around'
   },
   name: {
-    fontFamily: 'System',
-    fontSize: 16,
+    fontFamily: 'Avenir-Heavy',
+    fontSize: 17,
     fontWeight: '700',
-    alignSelf: 'center',
+    color: "#4b3ca7"
   },
   category: {
-    fontFamily: 'System',
+    fontFamily: 'Avenir',
     fontSize: 14,
-    opacity: 0.6,
+    opacity: 0.8,
     fontWeight: '500',
+    color: "#4b3ca7"
   },
-  starView: {
+  rating: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginLeft: 5,
-  },
-  icon: {
-    alignSelf: 'center',
-  },
-  mark: {
-    fontFamily: 'System',
-    fontSize: 16,
-    opacity: 0.6,
-    fontWeight: '500',
-    alignSelf: 'center',
+    fontFamily: 'Avenir',
+    fontSize: 14,
+    color: "#4b3ca7"
   },
   //   SECOND ROW
   price: {
-    fontFamily: 'System',
-    fontSize: 18,
-    opacity: 0.6,
+    fontFamily: 'Avenir-Heavy',
+    fontSize: 20,
     fontWeight: '500',
     alignSelf: 'center',
-  },
-  buttonsRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
-  button: {
-    width: Dimensions.get('window').width / 8,
-    height: Dimensions.get('window').height / 18,
-    borderRadius: 15,
-    justifyContent: 'center',
-    marginHorizontal: 5,
-  },
+    color: "#4b3ca7",
+    justifyContent: 'center'
+  }
 });
 
 export default ProductDetails;
